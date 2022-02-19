@@ -5,7 +5,7 @@ const MissingParamError = require("../helpers/missing-param-error")
 module.exports = class LoginRouter {
     constructor (authUseCase, emailValidator){
         this.authUseCase = authUseCase
-        this.emailValidator = emailValidator
+        this.emailValidator = emailValidator;
     }
     async route(httpRequest) {
         
